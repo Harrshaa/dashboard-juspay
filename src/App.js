@@ -1,9 +1,11 @@
 import React from "react";
 import ReactDom from "react-dom/client";
+import Header from "./components/Header";
 
 const App=()=>{
     return (
-        <div>Hello</div>
+      
+        <Header/>
     )
 }
 

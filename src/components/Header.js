@@ -17,13 +17,12 @@ const Header = ({ title }) => {
   
   return (
     <div className="bg-white dark:bg-[#FFFFFF1A] border-b border-gray-200 dark:border-gray-700 shadow-sm text-white">
-      {/* Top Dark Bar */}
-      <div className="bg-gray-900 h-1"></div>
+  
       
-      {/* Main Header */}
+ 
       <div className="px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Left Section - Logo and Breadcrumbs */}
+     
           <div className="flex items-center space-x-4">
             {/* Logo */}
             <div className="flex items-center space-x-2">
@@ -31,7 +30,7 @@ const Header = ({ title }) => {
               {/* <span className="text-xl font-bold text-gray-900 dark:text-white">ByeWind</span> */}
             </div>
             
-            {/* Breadcrumbs */}
+       
             <div className="flex items-center space-x-3">
               <img src={header1} alt="Grid" className="w-7 h-7 dark:invert dark:brightness-100" />
               <img src={header2} alt="Star" className="w-5 h-5 dark:invert dark:brightness-100" />
@@ -41,17 +40,17 @@ const Header = ({ title }) => {
             </div>
           </div>
 
-          {/* Middle Section - Search Bar */}
+        
           <div className="flex-1 max-w-md mx-8">
   <div className="relative">
-    {/* Left Search Icon */}
+
     <img
       src={header8}
       alt="Search"
       className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 dark:invert dark:brightness-100"
     />
 
-    {/* Input */}
+
     <input
       type="text"
       placeholder="Search"
@@ -61,7 +60,6 @@ const Header = ({ title }) => {
                  text-sm placeholder-gray-400"
     />
 
-    {/* Right Shortcut Icon */}
     <img
       src={header7}
       alt="Shortcut"
@@ -71,7 +69,7 @@ const Header = ({ title }) => {
 </div>
 
 
-          {/* Right Section - Utility Icons */}
+     
           <div className="flex items-center space-x-2">
             <button 
               className="p-2.5 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200"
@@ -89,9 +87,7 @@ const Header = ({ title }) => {
             <button className="p-2.5 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200" title="Folder">
               <img src={header6} alt="Folder" className="w-5 h-5 dark:invert dark:brightness-100" />
             </button>
-            {/* <button className="p-2.5 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200" title="Profile">
-              <img src={header6} alt="Profile" className="w-5 h-5" />
-            </button> */}
+       
           </div>
         </div>
       </div>

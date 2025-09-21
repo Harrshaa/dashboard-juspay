@@ -12,20 +12,20 @@ export const useTheme = () => {
 
 export const ThemeProvider = ({ children }) => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    // Check localStorage for saved theme preference
+  
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       return savedTheme === 'dark';
     }
-    // Default to system preference
+    
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
 
   useEffect(() => {
-    // Save theme preference to localStorage
+   
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
     
-    // Update document class for Tailwind dark mode
+  
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
     } else {

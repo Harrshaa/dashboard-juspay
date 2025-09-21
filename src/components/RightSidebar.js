@@ -6,16 +6,16 @@ const personIcon = new URL('../assets/notifications2.svg', import.meta.url).href
 const documentIcon = new URL('../assets/notifications3.svg', import.meta.url).href;
 const trashIcon = new URL('../assets/notifications4.svg', import.meta.url).href;
 
-const activities1 = new URL('../assets/activities-1.svg', import.meta.url).href;
-const activities2 = new URL('../assets/activities-2.svg', import.meta.url).href;
+const activities1 = new URL('../assets/contacts-6.svg', import.meta.url).href;
+const activities2 = new URL('../assets/contacts-3.svg', import.meta.url).href;
 const activities3 = new URL('../assets/activities-3.svg', import.meta.url).href;
-const activities4 = new URL('../assets/activities-4.svg', import.meta.url).href;
+const activities4 = new URL('../assets/contacts-5.svg', import.meta.url).href;
 const activities5 = new URL('../assets/activities-5.svg', import.meta.url).href;
 
-const contact1 = new URL('../assets/contacts-1.svg', import.meta.url).href;
+const contact1 = new URL('../assets/activities-3.svg', import.meta.url).href;
 const contact2 = new URL('../assets/contacts-2.svg', import.meta.url).href;
 const contact3 = new URL('../assets/contacts-3.svg', import.meta.url).href;
-const contact4 = new URL('../assets/contacts-4.svg', import.meta.url).href;
+const contact4 = new URL('../assets/activities-5.svg', import.meta.url).href;
 const contact5 = new URL('../assets/contacts-5.svg', import.meta.url).href;
 const contact6 = new URL('../assets/contacts-6.svg', import.meta.url).href;
 

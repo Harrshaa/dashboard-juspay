@@ -1,10 +1,10 @@
 import React, { useState, useMemo, useEffect } from 'react';
 
 /* Resolve contact avatars (adjust filenames if needed) */
-const contact1 = new URL('../assets/contacts-1.svg', import.meta.url).href;
+const contact1 = new URL('../assets/activities-3.svg', import.meta.url).href;
 const contact2 = new URL('../assets/contacts-2.svg', import.meta.url).href;
 const contact3 = new URL('../assets/contacts-3.svg', import.meta.url).href;
-const contact4 = new URL('../assets/contacts-4.svg', import.meta.url).href;
+const contact4 = new URL('../assets/activities-5.svg', import.meta.url).href;
 const contact5 = new URL('../assets/contacts-5.svg', import.meta.url).href;
 const contact6 = new URL('../assets/contacts-6.svg', import.meta.url).href;
 const left = new URL('../assets/ArrowLineLeft.svg', import.meta.url).href;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-// Pre-resolve all SVGs using new URL(..., import.meta.url).href
+
 const bugIcon = new URL('../assets/notifications1.svg', import.meta.url).href;
 const personIcon = new URL('../assets/notifications2.svg', import.meta.url).href;
 const documentIcon = new URL('../assets/notifications3.svg', import.meta.url).href;

@@ -3,7 +3,7 @@ import React from 'react';
 
 const ProjectionsChart = () => {
 
-const projectionActual = new URL('../assets/projections.svg', import.meta.url).href; // arrow down
+const projectionActual = new URL('../assets/Chart-1.svg', import.meta.url).href; // arrow down
   const data = [
     { month: 'Jan', value: 10, maxValue: 30 },
     { month: 'Feb', value: 15, maxValue: 30 },
@@ -20,13 +20,13 @@ const projectionActual = new URL('../assets/projections.svg', import.meta.url).h
       {/* Y-axis labels */}
       <div className="relative h-40 sm:h-48">
         <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-12 text-figma-gray-40 dark:text-gray-400 font-inter">
-          <span>30M</span>
+          {/* <span>30M</span>
           <span>25M</span>
           <span>20M</span>
           <span>15M</span>
           <span>10M</span>
           <span>5M</span>
-          <span>0</span>
+          <span>0</span> */}
         </div>
         {/* Projections Chart Image */}
         <div className="ml-8 h-full flex items-center justify-center">

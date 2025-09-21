@@ -11,8 +11,10 @@ import TotalSales from './components/TotalSales';
 import OrdersList from './components/OrdersList';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { useTheme } from './contexts/ThemeContext';
-const revenue = new URL('./assets/revenue.svg', import.meta.url).href;
+const revenue = new URL('./assets/Chart.svg', import.meta.url).href;
 
+const right = new URL('./assets/ArrowLineLeft.svg', import.meta.url).href;
+const left = new URL('./assets/ArrowLineRight.svg', import.meta.url).href;
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -88,11 +90,11 @@ function App() {
             <div className="relative h-40 sm:h-48">
               {/* Y-axis labels */}
               <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-12 text-figma-gray-40 dark:text-gray-400 font-inter">
-                <span>20M</span>
+                {/* <span>20M</span>
                 <span>15M</span>
                 <span>10M</span>
                 <span>5M</span>
-                <span>0</span>
+                <span>0</span> */}
               </div>
               <div className="ml-8 h-full flex items-center justify-center">
                 <img 
@@ -109,7 +111,7 @@ function App() {
           <RevenueByLocation />
         </div>
         
-        {/* Row 3: Top Selling Products (left) + Total Sales (right) */}
+    
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
           <TopSellingProducts />
           <TotalSales />
@@ -120,32 +122,32 @@ function App() {
 
   return (
     <div className="App flex h-screen bg-figma-bg dark:bg-gray-900 font-inter">
-      {/* Mobile menu buttons */}
+  
       <button
         className="lg:hidden fixed top-4 left-4 z-50 p-3 bg-figma-card dark:bg-gray-800 rounded-8 shadow-figma-card border border-figma-border dark:border-gray-700"
         onClick={() => setSidebarOpen(!sidebarOpen)}
         aria-label="Toggle sidebar menu"
       >
-        <img src="/images/header-8.svg" alt="Menu" className="w-6 h-6" />
+        <img src={sidebarOpen? right : left} alt="Menu" className="w-6 h-6" />
       </button>
       
-      {/* Right sidebar toggle button - Only show on dashboard, not on orders page */}
+   
       {currentPage !== 'orders' && (
         <button
           className="lg:hidden fixed top-4 right-4 z-50 p-3 bg-figma-card dark:bg-gray-800 rounded-8 shadow-figma-card border border-figma-border dark:border-gray-700"
           onClick={() => setRightSidebarOpen(!rightSidebarOpen)}
           aria-label="Toggle right sidebar"
         >
-          <img src="/images/header-8.svg" alt="Right Sidebar" className="w-6 h-6" />
+          <img src={rightSidebarOpen? left: right} alt="Right Sidebar" className="w-6 h-6" />
         </button>
       )}
 
-      {/* Left Sidebar - Exact Figma width 212px */}
+    
       <div className={`${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 fixed lg:static inset-y-0 left-0 z-40 w-64 lg:w-212 bg-figma-card dark:bg-gray-800 border-r border-figma-border dark:border-gray-700 transition-transform duration-300 ease-in-out`}>
         <Sidebar onClose={() => setSidebarOpen(false)} onPageChange={setCurrentPage} />
       </div>
 
-      {/* Overlay for mobile */}
+  
       {(sidebarOpen || (rightSidebarOpen && currentPage !== 'orders')) && (
         <div 
           className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-30"
@@ -156,9 +158,9 @@ function App() {
         />
       )}
 
-      {/* Main content area */}
+   
       <div className="flex-1 flex flex-col min-w-0">
-        {/* Main content */}
+       
         <main className="flex-1 p-24 overflow-y-auto">
           <div className="max-w-none">
             {renderMainContent()}
@@ -166,21 +168,21 @@ function App() {
         </main>
       </div>
 
-      {/* Right Sidebar - Only show on dashboard, not on orders page */}
+     
       {currentPage !== 'orders' && (
         <>
-          {/* Desktop Right Sidebar */}
+        
           <div className="hidden lg:block w-280 bg-figma-card dark:bg-gray-800 border-l border-figma-border dark:border-gray-700 p-24 overflow-y-auto">
             <RightSidebar />
           </div>
 
-          {/* Mobile Right Sidebar */}
+         
           <div className={`${rightSidebarOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden fixed inset-y-0 right-0 z-40 w-280 bg-figma-card dark:bg-gray-800 border-l border-figma-border dark:border-gray-700 p-24 overflow-y-auto transition-transform duration-300 ease-in-out`}>
             <button
               className="lg:hidden absolute top-4 right-4 p-2 hover:bg-figma-gray-5 dark:hover:bg-gray-700 rounded-8"
               onClick={() => setRightSidebarOpen(false)}
             >
-              <img src="/images/header-8.svg" alt="Close" className="w-5 h-5" />
+              <img src={right} alt="Close" className="w-5 h-5" />
             </button>
             <RightSidebar />
           </div>

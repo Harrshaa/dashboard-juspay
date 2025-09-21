@@ -16,7 +16,7 @@ const Header = ({ title }) => {
   const { isDarkMode, toggleTheme } = useTheme();
   
   return (
-    <div className="bg-white dark:bg-[#FFFFFF1A] border-b border-gray-200 dark:border-gray-700 shadow-sm">
+    <div className="bg-white dark:bg-[#FFFFFF1A] border-b border-gray-200 dark:border-gray-700 shadow-sm text-white">
       {/* Top Dark Bar */}
       <div className="bg-gray-900 h-1"></div>
       
@@ -33,8 +33,8 @@ const Header = ({ title }) => {
             
             {/* Breadcrumbs */}
             <div className="flex items-center space-x-3">
-              <img src={header1} alt="Grid" className="w-5 h-5" />
-              <img src={header2} alt="Star" className="w-5 h-5" />
+              <img src={header1} alt="Grid" className="w-7 h-7 dark:invert dark:brightness-100" />
+              <img src={header2} alt="Star" className="w-5 h-5 dark:invert dark:brightness-100" />
               <span className="text-gray-500 text-sm">Dashboards</span>
               <span className="text-gray-400">/</span>
               <span className="text-gray-900 dark:text-white text-sm font-medium">Default</span>
@@ -48,7 +48,7 @@ const Header = ({ title }) => {
     <img
       src={header8}
       alt="Search"
-      className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400"
+      className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 dark:invert dark:brightness-100"
     />
 
     {/* Input */}
@@ -65,7 +65,7 @@ const Header = ({ title }) => {
     <img
       src={header7}
       alt="Shortcut"
-      className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400"
+      className="absolute right-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400 dark:invert dark:brightness-100"
     />
   </div>
 </div>
@@ -78,16 +78,16 @@ const Header = ({ title }) => {
               onClick={toggleTheme}
               title="Toggle theme"
             >
-              <img src={header3} alt="Theme" className="w-5 h-5" />
+              <img src={header3} alt="Theme" className="w-7 h-7 dark:invert dark:brightness-100" />
             </button>
             <button className="p-2.5 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200" title="Clock">
-              <img src={header4} alt="Clock" className="w-5 h-5" />
+              <img src={header4} alt="Clock" className="w-7 h-7 dark:invert dark:brightness-100" />
             </button>
             <button className="p-2.5 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200" title="Notifications">
-              <img src={header5} alt="Notifications" className="w-5 h-5" />
+              <img src={header5} alt="Notifications" className="w-7 h-7 dark:text-white dark:invert dark:brightness-100" />
             </button>
             <button className="p-2.5 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200" title="Folder">
-              <img src={header6} alt="Folder" className="w-5 h-5" />
+              <img src={header6} alt="Folder" className="w-5 h-5 dark:invert dark:brightness-100" />
             </button>
             {/* <button className="p-2.5 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors duration-200" title="Profile">
               <img src={header6} alt="Profile" className="w-5 h-5" />

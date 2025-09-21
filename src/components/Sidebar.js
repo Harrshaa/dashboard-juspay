@@ -21,7 +21,7 @@ const Sidebar = ({ onClose, onPageChange }) => {
         className="lg:hidden absolute top-4 right-4 p-2 hover:bg-figma-gray-5 dark:hover:bg-gray-700 rounded-8"
         onClick={onClose}
       >
-        <img src="/images/header-8.svg" alt="Close" className="w-5 h-5" />
+        {/* <img src="/images/header-8.svg" alt="Close" className="w-5 h-5" /> */}
       </button>
       {/* Name Badge */}
       <div className="w-full flex items-center gap-2 p-1">

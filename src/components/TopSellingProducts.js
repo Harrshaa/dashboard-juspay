@@ -27,11 +27,11 @@ const TopSellingProducts = () => {
               <tr key={product.id} className="border-b border-figma-border dark:border-gray-700 hover:bg-figma-gray-5 dark:hover:bg-gray-700">
                 <td className="py-12 px-16">
                   <div className="flex items-center space-x-12">
-                    <img 
+                    {/* <img 
                       src={product.image} 
                       alt={product.name} 
                       className="w-8 h-8 rounded-8 object-cover"
-                    />
+                    /> */}
                     <span className="text-14 text-figma-gray dark:text-white font-inter">{product.name}</span>
                   </div>
                 </td>

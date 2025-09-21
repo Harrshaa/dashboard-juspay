@@ -1,5 +1,6 @@
 import React from 'react';
 
+const sales = new URL('../assets/sales.svg', import.meta.url).href;
 const TotalSales = () => {
   const salesData = [
     { source: "Direct", percentage: 38.6, amount: "$300.56", color: "bg-purple-500" },
@@ -16,7 +17,7 @@ const TotalSales = () => {
       <div className="flex items-center justify-center mb-6">
         <div className="relative w-32 h-32 sm:w-40 sm:h-40">
           <img 
-            src="/images/sales.svg" 
+            src={sales}
             alt="Total Sales Donut Chart" 
             className="w-full h-full object-contain"
           />

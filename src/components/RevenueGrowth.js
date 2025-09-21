@@ -1,5 +1,5 @@
 import React from 'react';
-const revenue = new URL('../assets/revenue.svg', import.meta.url).href;
+const revenue = new URL('../assets/Chart.svg', import.meta.url).href;
 
 const RevenueGrowth = () => {
   return (

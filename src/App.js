@@ -2,6 +2,7 @@ import React from "react";
 import ReactDom from "react-dom/client";
 import Header from "./components/Header";
 import RightSidebar from "./components/RightSidebar";
+import Cards from "./components/Cards";
 
 
 
@@ -13,6 +14,7 @@ const App=()=>{
         <Header/>
         <img src="/images/contacts-4.svg"  />
         <RightSidebar/>
+        <Cards/>
         <img src={header5Url} alt="header"  />
   
         

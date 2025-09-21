@@ -109,7 +109,7 @@ const RightSidebar = () => {
         <div className="space-y-3">
           {contacts.map((c) => (
             <div key={c.id} className="flex items-center space-x-3">
-              <img src={contactsMap[c.avatar]} alt={c.name} className="w-8 h-8 rounded-full" />
+              <img src={contactsMap[c.avatar]} alt={c.name} className="w-6 h-6 rounded-full" />
               <span className="text-14 text-figma-gray dark:text-white font-inter">{c.name}</span>
             </div>
           ))}

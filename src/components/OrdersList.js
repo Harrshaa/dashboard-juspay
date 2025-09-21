@@ -368,10 +368,9 @@ const OrdersList = () => {
             disabled={currentPage === 1}
             className="p-2 text-gray-600 hover:text-gray-800 disabled:opacity-50 disabled:cursor-not-allowed rounded-md hover:bg-gray-100"
           >
-            <img src={left} alt="Previous" className="w-9 h-9" />
+            <img src={left} alt="Previous" className="w-9 h-9 dark:invert" />
           </button>
 
-          {/* Page Numbers - Sliding Pagination */}
           {(() => {
             const maxVisiblePages = 5;
             const pages = [];
@@ -431,12 +430,12 @@ const OrdersList = () => {
             disabled={currentPage === totalPages}
             className="p-2 text-gray-600 hover:text-gray-800 disabled:opacity-50 disabled:cursor-not-allowed rounded-md hover:bg-gray-100"
           >
-            <img src={right} alt="Next" className="w-9 h-9 dark:text-white" />
+            <img src={right} alt="Next" className="w-9 h-9 dark:invert dark:brightness-100" />
           </button>
         </div>
       </div>
 
-      {/* Add Order Modal */}
+   
       {showAddModal && ( 
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 w-96">

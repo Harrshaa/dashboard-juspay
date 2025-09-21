@@ -133,7 +133,7 @@ const Sidebar = ({ onClose, onPageChange }) => {
         >
           <div className="flex items-center gap-1">
             <div className="w-5 h-5 flex items-center justify-center">
-              <img src={pages1}alt="User Profile" className="w-5 h-5 dark:brightness-100" />
+              <img src={pages1}alt="User Profile" className="w-5 h-5 dark:invert dark:brightness-100" />
             </div>
             <span className="text-figma-gray dark:text-gray-300 text-14 font-inter">User Profile</span>
           </div>
@@ -198,7 +198,7 @@ const Sidebar = ({ onClose, onPageChange }) => {
         <div className="flex items-center justify-between px-2 py-1 hover:bg-gray-50 dark:hover:bg-gray-700 rounded">
           <div className="flex items-center gap-1">
             <div className="w-5 h-5 flex items-center justify-center">
-              <img src={pages2} alt="Account" className="w-5 h-5" />
+              <img src={pages2} alt="Account" className="w-5 h-5 dark:invert dark:brightness-100" />
             </div>
             <span className="text-figma-gray dark:text-gray-300 text-14 font-inter">Account</span>
           </div>
@@ -209,7 +209,7 @@ const Sidebar = ({ onClose, onPageChange }) => {
         <div className="flex items-center justify-between px-2 py-1 hover:bg-gray-50 dark:hover:bg-gray-700 rounded">
           <div className="flex items-center gap-1">
             <div className="w-5 h-5 flex items-center justify-center">
-              <img src={pages3} alt="Corporate" className="w-5 h-5" />
+              <img src={pages3} alt="Corporate" className="w-5 h-5 dark:invert dark:brightness-100" />
             </div>
             <span className="text-figma-gray dark:text-gray-300 text-14 font-inter">Corporate</span>
           </div>
@@ -220,7 +220,7 @@ const Sidebar = ({ onClose, onPageChange }) => {
         <div className="flex items-center justify-between px-2 py-1 hover:bg-gray-50 dark:hover:bg-gray-700 rounded">
           <div className="flex items-center gap-1">
             <div className="w-5 h-5 flex items-center justify-center">
-              <img src={pages4} alt="Blog" className="w-5 h-5" />
+              <img src={pages4} alt="Blog" className="w-5 h-5 dark:invert dark:brightness-100" />
             </div>
             <span className="text-figma-gray dark:text-gray-300 text-14 font-inter">Blog</span>
           </div>
@@ -231,7 +231,7 @@ const Sidebar = ({ onClose, onPageChange }) => {
         <div className="flex items-center justify-between px-2 py-1 hover:bg-gray-50 dark:hover:bg-gray-700 rounded">
           <div className="flex items-center gap-1">
             <div className="w-5 h-5 flex items-center justify-center">
-              <img src={pages5} alt="Social" className="w-5 h-5" />
+              <img src={pages5} alt="Social" className="w-5 h-5 dark:invert dark:brightness-100" />
             </div>
             <span className="text-figma-gray dark:text-gray-300 text-14 font-inter">Social</span>
           </div>

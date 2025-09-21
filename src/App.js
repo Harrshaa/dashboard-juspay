@@ -27,15 +27,15 @@ function App() {
     if (currentPage === 'orders') {
       return (
         <div className="space-y-24">
-          {/* Header */}
+     
           <Header title={isDarkMode ? "Orders List - Dark" : "Orders List - Light"} />
           
-          {/* Breadcrumb */}
+      
           <div className="text-14 text-figma-gray-60 dark:text-gray-400 font-inter">
             <span className="text-figma-gray dark:text-white">Dashboards</span> / <span className="text-figma-gray-60 dark:text-gray-400">Default</span>
           </div>
           
-          {/* Orders List */}
+        
           <OrdersList />
         </div>
       );
@@ -50,27 +50,26 @@ function App() {
         <div className="text-14 text-figma-gray-60 dark:text-gray-400 font-inter">
           <span className="text-figma-gray dark:text-white">Dashboards</span> / <span className="text-figma-gray-60 dark:text-gray-400">Default</span>
         </div>
-        
-        {/* eCommerce Section */}
+     
         <div>
           <h2 className="text-24 font-bold text-figma-gray dark:text-white mb-24 font-inter">eCommerce</h2>
         </div>
         
-        {/* Row 1: 4 KPI Cards (left) + Projections vs Actuals (right) */}
+    
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-24 mb-24">
-          {/* Left: 4 KPI Cards taking 2/3 width */}
+       
           <div className="lg:col-span-2">
             <Cards />
           </div>
-          {/* Right: Projections vs Actuals taking 1/3 width */}
+        
           <div className="lg:col-span-1">
             <ProjectionsChart />
           </div>
         </div>
         
-        {/* Row 2: Revenue (left) + Revenue by Location (right) */}
+      
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 mb-24">
-          {/* Left: Revenue Chart */}
+      
           <div className="bg-figma-card dark:bg-gray-800 rounded-12 shadow-figma-card p-24 border border-figma-border dark:border-gray-700">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-16 space-y-2 sm:space-y-0">
               <h3 className="text-18 font-semibold text-figma-gray dark:text-white font-inter">Revenue</h3>
@@ -107,7 +106,7 @@ function App() {
          
           </div>
           
-          {/* Right: Revenue by Location */}
+    
           <RevenueByLocation />
         </div>
         
@@ -128,7 +127,7 @@ function App() {
         onClick={() => setSidebarOpen(!sidebarOpen)}
         aria-label="Toggle sidebar menu"
       >
-        <img src={sidebarOpen? right : left} alt="Menu" className="w-6 h-6" />
+        <img src={sidebarOpen? right : left} alt="Menu" className="w-6 h-6 dark:invert dark:brightness-100" />
       </button>
       
    
@@ -138,7 +137,7 @@ function App() {
           onClick={() => setRightSidebarOpen(!rightSidebarOpen)}
           aria-label="Toggle right sidebar"
         >
-          <img src={rightSidebarOpen? left: right} alt="Right Sidebar" className="w-6 h-6" />
+          <img src={rightSidebarOpen? left: right} alt="Right Sidebar" className="w-6 h-6 dark:invert dark:brightness-100" />
         </button>
       )}
 
@@ -182,7 +181,7 @@ function App() {
               className="lg:hidden absolute top-4 right-4 p-2 hover:bg-figma-gray-5 dark:hover:bg-gray-700 rounded-8"
               onClick={() => setRightSidebarOpen(false)}
             >
-              <img src={right} alt="Close" className="w-5 h-5" />
+              <img src={right} alt="Close" className="w-5 h-5 dark:invert" />
             </button>
             <RightSidebar />
           </div>
